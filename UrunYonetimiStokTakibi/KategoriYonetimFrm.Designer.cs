@@ -34,20 +34,20 @@
             this.ürünYönetimToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.kullanıcıYönetimiToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.çıkışToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.dataGridView1 = new System.Windows.Forms.DataGridView();
-            this.groupBox1 = new System.Windows.Forms.GroupBox();
+            this.dgvKategoriler = new System.Windows.Forms.DataGridView();
+            this.grBxKategoriler = new System.Windows.Forms.GroupBox();
+            this.btnKategoriGuncelle = new System.Windows.Forms.Button();
+            this.btnKategoriSil = new System.Windows.Forms.Button();
+            this.btnKategoriEkle = new System.Windows.Forms.Button();
             this.cbxDurum = new System.Windows.Forms.CheckBox();
             this.label3 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
             this.txtKategoriAdı = new System.Windows.Forms.TextBox();
             this.txtKategoriAciklamasi = new System.Windows.Forms.TextBox();
-            this.btnEkle = new System.Windows.Forms.Button();
-            this.btnSil = new System.Windows.Forms.Button();
-            this.btnGuncelle = new System.Windows.Forms.Button();
             this.menuStrip1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
-            this.groupBox1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dgvKategoriler)).BeginInit();
+            this.grBxKategoriler.SuspendLayout();
             this.SuspendLayout();
             // 
             // menuStrip1
@@ -63,7 +63,7 @@
             this.menuStrip1.Location = new System.Drawing.Point(0, 0);
             this.menuStrip1.Name = "menuStrip1";
             this.menuStrip1.Padding = new System.Windows.Forms.Padding(13, 4, 0, 4);
-            this.menuStrip1.Size = new System.Drawing.Size(1718, 48);
+            this.menuStrip1.Size = new System.Drawing.Size(1332, 44);
             this.menuStrip1.TabIndex = 0;
             this.menuStrip1.Text = "menuStrip1";
             // 
@@ -97,50 +97,75 @@
             this.çıkışToolStripMenuItem.Size = new System.Drawing.Size(83, 36);
             this.çıkışToolStripMenuItem.Text = "Çıkış";
             // 
-            // dataGridView1
+            // dgvKategoriler
             // 
-            this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Location = new System.Drawing.Point(13, 71);
-            this.dataGridView1.Name = "dataGridView1";
-            this.dataGridView1.RowHeadersWidth = 82;
-            this.dataGridView1.RowTemplate.Height = 33;
-            this.dataGridView1.Size = new System.Drawing.Size(976, 846);
-            this.dataGridView1.TabIndex = 1;
+            this.dgvKategoriler.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dgvKategoriler.Location = new System.Drawing.Point(13, 71);
+            this.dgvKategoriler.Name = "dgvKategoriler";
+            this.dgvKategoriler.RowHeadersWidth = 82;
+            this.dgvKategoriler.RowTemplate.Height = 33;
+            this.dgvKategoriler.Size = new System.Drawing.Size(721, 584);
+            this.dgvKategoriler.TabIndex = 1;
             // 
-            // groupBox1
+            // grBxKategoriler
             // 
-            this.groupBox1.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.groupBox1.Controls.Add(this.btnGuncelle);
-            this.groupBox1.Controls.Add(this.btnSil);
-            this.groupBox1.Controls.Add(this.btnEkle);
-            this.groupBox1.Controls.Add(this.cbxDurum);
-            this.groupBox1.Controls.Add(this.label3);
-            this.groupBox1.Controls.Add(this.label2);
-            this.groupBox1.Controls.Add(this.label1);
-            this.groupBox1.Controls.Add(this.txtKategoriAdı);
-            this.groupBox1.Controls.Add(this.txtKategoriAciklamasi);
-            this.groupBox1.Location = new System.Drawing.Point(1013, 71);
-            this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Size = new System.Drawing.Size(677, 523);
-            this.groupBox1.TabIndex = 2;
-            this.groupBox1.TabStop = false;
-            this.groupBox1.Text = "Kategori Yönetimi";
+            this.grBxKategoriler.Controls.Add(this.btnKategoriGuncelle);
+            this.grBxKategoriler.Controls.Add(this.btnKategoriSil);
+            this.grBxKategoriler.Controls.Add(this.btnKategoriEkle);
+            this.grBxKategoriler.Controls.Add(this.cbxDurum);
+            this.grBxKategoriler.Controls.Add(this.label3);
+            this.grBxKategoriler.Controls.Add(this.label2);
+            this.grBxKategoriler.Controls.Add(this.label1);
+            this.grBxKategoriler.Controls.Add(this.txtKategoriAdı);
+            this.grBxKategoriler.Controls.Add(this.txtKategoriAciklamasi);
+            this.grBxKategoriler.Location = new System.Drawing.Point(768, 156);
+            this.grBxKategoriler.Name = "grBxKategoriler";
+            this.grBxKategoriler.Size = new System.Drawing.Size(542, 499);
+            this.grBxKategoriler.TabIndex = 2;
+            this.grBxKategoriler.TabStop = false;
+            this.grBxKategoriler.Text = "Kategori Yönetimi";
+            // 
+            // btnKategoriGuncelle
+            // 
+            this.btnKategoriGuncelle.Location = new System.Drawing.Point(197, 348);
+            this.btnKategoriGuncelle.Name = "btnKategoriGuncelle";
+            this.btnKategoriGuncelle.Size = new System.Drawing.Size(128, 84);
+            this.btnKategoriGuncelle.TabIndex = 5;
+            this.btnKategoriGuncelle.Text = "Güncelle";
+            this.btnKategoriGuncelle.UseVisualStyleBackColor = true;
+            // 
+            // btnKategoriSil
+            // 
+            this.btnKategoriSil.Location = new System.Drawing.Point(370, 348);
+            this.btnKategoriSil.Name = "btnKategoriSil";
+            this.btnKategoriSil.Size = new System.Drawing.Size(141, 84);
+            this.btnKategoriSil.TabIndex = 6;
+            this.btnKategoriSil.Text = "Sil";
+            this.btnKategoriSil.UseVisualStyleBackColor = true;
+            // 
+            // btnKategoriEkle
+            // 
+            this.btnKategoriEkle.Location = new System.Drawing.Point(22, 348);
+            this.btnKategoriEkle.Name = "btnKategoriEkle";
+            this.btnKategoriEkle.Size = new System.Drawing.Size(130, 84);
+            this.btnKategoriEkle.TabIndex = 4;
+            this.btnKategoriEkle.Text = "Ekle";
+            this.btnKategoriEkle.UseVisualStyleBackColor = true;
             // 
             // cbxDurum
             // 
             this.cbxDurum.AutoSize = true;
-            this.cbxDurum.Location = new System.Drawing.Point(300, 267);
+            this.cbxDurum.Location = new System.Drawing.Point(229, 241);
             this.cbxDurum.Name = "cbxDurum";
-            this.cbxDurum.Size = new System.Drawing.Size(145, 28);
+            this.cbxDurum.Size = new System.Drawing.Size(102, 28);
             this.cbxDurum.TabIndex = 3;
-            this.cbxDurum.Text = "checkBox1";
+            this.cbxDurum.Text = "Durum";
             this.cbxDurum.UseVisualStyleBackColor = true;
             // 
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(49, 306);
+            this.label3.Location = new System.Drawing.Point(46, 267);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(145, 24);
             this.label3.TabIndex = 6;
@@ -166,65 +191,38 @@
             // 
             // txtKategoriAdı
             // 
-            this.txtKategoriAdı.Location = new System.Drawing.Point(300, 63);
+            this.txtKategoriAdı.Location = new System.Drawing.Point(229, 61);
             this.txtKategoriAdı.Name = "txtKategoriAdı";
-            this.txtKategoriAdı.Size = new System.Drawing.Size(345, 32);
+            this.txtKategoriAdı.Size = new System.Drawing.Size(282, 32);
             this.txtKategoriAdı.TabIndex = 0;
             // 
             // txtKategoriAciklamasi
             // 
-            this.txtKategoriAciklamasi.Location = new System.Drawing.Point(300, 139);
+            this.txtKategoriAciklamasi.Location = new System.Drawing.Point(229, 125);
             this.txtKategoriAciklamasi.Multiline = true;
             this.txtKategoriAciklamasi.Name = "txtKategoriAciklamasi";
-            this.txtKategoriAciklamasi.Size = new System.Drawing.Size(345, 98);
+            this.txtKategoriAciklamasi.Size = new System.Drawing.Size(282, 98);
             this.txtKategoriAciklamasi.TabIndex = 1;
-            // 
-            // btnEkle
-            // 
-            this.btnEkle.Location = new System.Drawing.Point(34, 380);
-            this.btnEkle.Name = "btnEkle";
-            this.btnEkle.Size = new System.Drawing.Size(187, 104);
-            this.btnEkle.TabIndex = 4;
-            this.btnEkle.Text = "Ekle";
-            this.btnEkle.UseVisualStyleBackColor = true;
-            // 
-            // btnSil
-            // 
-            this.btnSil.Location = new System.Drawing.Point(454, 380);
-            this.btnSil.Name = "btnSil";
-            this.btnSil.Size = new System.Drawing.Size(174, 104);
-            this.btnSil.TabIndex = 6;
-            this.btnSil.Text = "Sil";
-            this.btnSil.UseVisualStyleBackColor = true;
-            // 
-            // btnGuncelle
-            // 
-            this.btnGuncelle.Location = new System.Drawing.Point(250, 380);
-            this.btnGuncelle.Name = "btnGuncelle";
-            this.btnGuncelle.Size = new System.Drawing.Size(174, 104);
-            this.btnGuncelle.TabIndex = 5;
-            this.btnGuncelle.Text = "Güncelle";
-            this.btnGuncelle.UseVisualStyleBackColor = true;
             // 
             // KategoriYonetimFrm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(12F, 24F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.AutoValidate = System.Windows.Forms.AutoValidate.EnablePreventFocusChange;
-            this.ClientSize = new System.Drawing.Size(1718, 929);
-            this.Controls.Add(this.groupBox1);
-            this.Controls.Add(this.dataGridView1);
+            this.ClientSize = new System.Drawing.Size(1332, 694);
+            this.Controls.Add(this.grBxKategoriler);
+            this.Controls.Add(this.dgvKategoriler);
             this.Controls.Add(this.menuStrip1);
             this.Font = new System.Drawing.Font("Arial", 7.875F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.MainMenuStrip = this.menuStrip1;
             this.Name = "KategoriYonetimFrm";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "Kategori Yönetimi";
+            this.Text = "a";
             this.menuStrip1.ResumeLayout(false);
             this.menuStrip1.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
-            this.groupBox1.ResumeLayout(false);
-            this.groupBox1.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dgvKategoriler)).EndInit();
+            this.grBxKategoriler.ResumeLayout(false);
+            this.grBxKategoriler.PerformLayout();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -238,16 +236,16 @@
         private System.Windows.Forms.ToolStripMenuItem ürünYönetimToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem kullanıcıYönetimiToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem çıkışToolStripMenuItem;
-        private System.Windows.Forms.DataGridView dataGridView1;
-        private System.Windows.Forms.GroupBox groupBox1;
+        private System.Windows.Forms.DataGridView dgvKategoriler;
+        private System.Windows.Forms.GroupBox grBxKategoriler;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.TextBox txtKategoriAdı;
         private System.Windows.Forms.TextBox txtKategoriAciklamasi;
         private System.Windows.Forms.CheckBox cbxDurum;
-        private System.Windows.Forms.Button btnGuncelle;
-        private System.Windows.Forms.Button btnSil;
-        private System.Windows.Forms.Button btnEkle;
+        private System.Windows.Forms.Button btnKategoriGuncelle;
+        private System.Windows.Forms.Button btnKategoriSil;
+        private System.Windows.Forms.Button btnKategoriEkle;
     }
 }

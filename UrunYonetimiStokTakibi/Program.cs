@@ -16,7 +16,7 @@ namespace UrunYonetimiStokTakibi
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new KategoriYonetimFrm());
+            Application.Run(new MarkaYonetimiFrm());
         }
     }
 }
