@@ -214,6 +214,7 @@
             this.Controls.Add(this.mnStripMarkalar);
             this.Name = "MarkaYonetimiFrm";
             this.Text = "MarkaYonetimiFrm";
+            this.Load += new System.EventHandler(this.MarkaYonetimiFrm_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dgvMarkalar)).EndInit();
             this.grpBxMarka.ResumeLayout(false);
             this.grpBxMarka.PerformLayout();
